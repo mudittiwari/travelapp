@@ -1,0 +1,23 @@
+#homepage_background img
+{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    
+}
+#homepage_background img
+{
+    filter: brightness(70%);
+    /* opacity: .7; */
+}
+#arrow
+{
+    position: relative;
+    bottom: 150px;
+    height: 200px;
+}
+#homepage_background h1
+{
+    width: 550px;
+}
