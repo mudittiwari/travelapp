@@ -1,0 +1,21 @@
+#journey_banner::before
+{
+    /* content: ""; */
+    z-index: -1;
+    margin: 0;
+    content: "";
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background:url('../assets/Journey.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    /* filter: brightness(0.6); */
+    /* opacity: 0.8; */
+    /* transition: all .3s; */
+
+}

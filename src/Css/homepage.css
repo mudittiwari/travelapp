@@ -1,3 +1,9 @@
+#homepage_background
+{
+    bottom: 82.4px;
+    height: 800px;
+}
+
 #homepage_background img
 {
     position: absolute;
@@ -14,10 +20,125 @@
 #arrow
 {
     position: relative;
-    bottom: 150px;
+    /* bottom: 150px; */
     height: 200px;
+    animation-name: arrowanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 #homepage_background h1
 {
     width: 550px;
+    
+}
+
+
+@keyframes arrowanimation
+{
+    0%
+    {
+        bottom: 150px;
+    }
+    50%
+    {
+        bottom: 190px;
+    }
+    100%
+    {
+        bottom: 150px;
+    }
+}
+
+#vtd::before
+{
+    z-index: -1;
+    margin: 0;
+    content: "";
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(216, 25, 94, 0.7);
+    transition: all .3s;
+}
+
+#travel_card:hover #vtd::before
+{
+    height: 100%;
+}
+
+#travel_card:hover #vtd
+{
+    color: white !important;
+}
+#travel_card
+{
+    transition: all 0.3s;
+    cursor: pointer;
+    bottom: 0px;
+}
+
+#travel_card:hover
+{
+    box-shadow: 0 12px 36px -4px rgb(216 25 94 / 25%);
+    bottom: 5px;
+}
+
+#arrow_right
+{
+    cursor: pointer;
+}
+
+#arrow_right img
+{
+    position:relative;
+    left: 0px;
+    transition: all 0.3s;
+}
+#arrow_right:hover img
+{
+    left: 40px;
+}
+
+#btd::before
+{
+    z-index: -1;
+    margin: 0;
+    content: "";
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(216, 25, 94, 0.7);
+    transition: all .3s;
+}
+
+#blog_card
+{
+    border: 1px solid rgba(216, 25, 94, 0.1);
+    border-radius: 10px;
+    width: 45%;
+    transition: all 0.3s;
+    cursor: pointer;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+#blog_card:hover
+{
+    box-shadow: 0 12px 36px -4px rgb(216 25 94 / 25%);
+    bottom: 5px;
+}
+
+
+#blog_card:hover #btd::before
+{
+    height: 100%;
+}
+
+#blog_card:hover #btd
+{
+    color: white !important;
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import { SearchOutlined, ShoppingCartOutlined } from "@material-ui/icons";
-import './Css/navbar.css';
+// import './Css/navbar.css';
 const list_element_left = (heading) => {
     return (
         <li className="mx-3 text-white border-b-0 border-b-white hover:border-b-2 hover:border-b-white transition-all">
-            <a href="#" className=" uppercase text-sm" style={{ 'fontFamily': `'Montserrat', sans-serif` }}>
+            <a href="#" className="uppercase text-xs font-bold" style={{ 'fontFamily': `'Montserrat', sans-serif`,'letterSpacing':'2px' }}>
                 {heading}
             </a>
         </li>);
@@ -19,7 +19,7 @@ const list_element_right = (heading, icon) => {
         <li className="mx-3 ">
             <div>
                 {mainicon}
-                <a href="#" className="text-white uppercase text-sm border-b-0 border-b-white hover:border-b-2 hover:border-b-white transition-all" style={{ 'fontFamily': `'Montserrat', sans-serif` }}>
+                <a href="#" className="text-white uppercase text-xs font-bold border-b-0 border-b-white hover:border-b-2 hover:border-b-white transition-all" style={{ 'fontFamily': `'Montserrat', sans-serif`,'letterSpacing':'2px' }}>
                 {heading}
             </a>
             </div>
